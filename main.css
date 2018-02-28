@@ -1,0 +1,57 @@
+
+[v-cloak] {
+  display: none;
+}
+
+.tooltip:after{
+    /* The tip of the tooltip */
+    content:'';
+    position:absolute;
+    border:6px solid #5190ac;
+    border-color:#5190ac transparent transparent;
+    width:0;
+    height:0;
+    bottom:-12px;
+    left:50%;
+    margin-left:-6px;
+}
+
+.carousel-item{
+    height: 200px;
+    width: 100%;
+}
+
+.navColor{
+    background-color: white!important;
+
+}
+.navbar{
+
+    z-index: 99;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: black;
+}
+.navbar-dark .navbar-toggler-icon{
+    background-image: url(img/hamburger.png);
+    background-size: 60px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 0;
+}
+
+span{
+    color: black;
+}
+
+.logo-container{
+    width: 280px;
+    
+}
+
+.logo-container img{
+    width: 100%;
+}
