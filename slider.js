@@ -81,12 +81,26 @@ Vue.component('navigation', {
         <b-collapse is-nav id="nav_collapse" class="flex-row-reverse">
 
             <b-navbar-nav>
-            <b-nav-item href="#" class="items">Link</b-nav-item>
-            <b-nav-item href="#" class="items">Disabled</b-nav-item>
+            <b-nav-item href="slider.html" class="items">Home</b-nav-item>
+            <b-nav-item-dropdown text="About" right>
+            <b-dropdown-item href="/artist">Arist Statement</b-dropdown-item>
+            <b-dropdown-item href="/about">About Wi9</b-dropdown-item>
+            </b-nav-item-dropdown>
+            <b-nav-item href="#" class="items">Contact</b-nav-item>
+            <b-nav-item href="#" class="items">Consultations</b-nav-item>      
 
-            <b-nav-item-dropdown text="User" right>
-            <b-dropdown-item href="#">Account</b-dropdown-item>
-            <b-dropdown-item href="#">Settings</b-dropdown-item>
+            <b-nav-item-dropdown text="Gallery" right>
+            <b-dropdown-item href="#">Family</b-dropdown-item>
+            <b-dropdown-item href="#">Senior Photos</b-dropdown-item>
+            <b-dropdown-item href="#">Special Events</b-dropdown-item>
+            <b-dropdown-item href="#">Wedding Day</b-dropdown-item>
+            <b-dropdown-item href="#">Engagements</b-dropdown-item>
+            <b-dropdown-item href="#">Bridals</b-dropdown-item>
+            <b-dropdown-item href="#">Missionary</b-dropdown-item>
+            <b-dropdown-item href="#">Models</b-dropdown-item>
+            <b-dropdown-item href="#">Extended Family</b-dropdown-item>
+            <b-dropdown-item href="#">Newborn</b-dropdown-item>
+            <b-dropdown-item href="#">Maternity</b-dropdown-item>
           </b-nav-item-dropdown>
             </b-navbar-nav>
 
