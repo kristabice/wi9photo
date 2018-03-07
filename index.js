@@ -81,7 +81,7 @@ Vue.component('navigation', {
         <b-collapse is-nav id="nav_collapse" class="flex-row-reverse">
 
             <b-navbar-nav>
-            <b-nav-item href="slider.html" class="items">Home</b-nav-item>
+            <b-nav-item href="index.html" class="items">Home</b-nav-item>
             <b-nav-item-dropdown text="About" right>
             <b-dropdown-item href="/artist">Arist Statement</b-dropdown-item>
             <b-dropdown-item href="/about">About Wi9</b-dropdown-item>

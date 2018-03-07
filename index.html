@@ -4,42 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"  >
+    <link rel="stylesheet" href="node_modules/bootstrap-vue/dist/bootstrap-vue.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
-    <div id='root'>
-        <ul>
-            <li v-for='name in names' v-text="name"></li>
-
-        </ul>
-        <input type="text" id="input" v-model="newName">
-        <button @click="onClick" >Add Name</button>
-    </div> <!-- end of root div -->
+    <div id="root">
+    <div class="container">
+    
+        <navigation></navigation>
+        
+        <template>
+                <div class="carousel-container">
+                  <b-carousel id="carousel1"
+                              style="text-shadow: 1px 1px 2px #333;"
+                              controls
+                              indicators
+                              background="#ababab"
+                              :interval="7000"
+                              img-width="1024"
+                              img-height="0"
+                              v-model="slide"
+                              @sliding-start="onSlideStart"
+                              @sliding-end="onSlideEnd"
+                  >
               
+                    <!-- Text slides with image -->
+                    <b-carousel-slide class="align-self-start"  img-src="img/slider.jpg"
+                    ></b-carousel-slide>
+              
+                    <!-- Slides with custom text -->
+                    <b-carousel-slide class="align-self-start" img-src="img/slider2.jpg">
+  
+                    </b-carousel-slide>
+              
+                    <!-- Slides with image only -->
+                    <b-carousel-slide class="align-self-start"   img-src="img/slider3.jpg">
+                    </b-carousel-slide>
+
+                    <b-carousel-slide  class="align-self-start"  img-src="img/slider3.jpg">
+                    </b-carousel-slide>
+
+
+                    <!-- Slides with image only -->
+                    <b-carousel-slide  class="align-self-start" img-src="img/slider4.jpg">
+                    </b-carousel-slide>
+                 
+              
+                 
+              
+                  </b-carousel>
+              
+                 
+              
+                </div>
+              </template>
+              <div class="row mt-5">
+                <div class="col-sm-4  offset-md-2 phone-offset-text">
+                  <h1>About Me</h1>
+                  <p>I have two main goals as a photographer.</p>
+
+                  <p>1) to always make my clients and models feel beautiful. I feel that everyone has unique, and beautiful aspects about them, and I love helping others realize their beauty and potential through my work.</p>
+                      
+                  <p>2) to constantly be learning. One of the things that I love the most about photography is the fact that I don't know everything, and I probably never will. I am constantly learning and exploring, and that excites me to no end.</p>
+                </div> <!-- end of col div -->
+                <div class="col-sm-4 offset-md-1 phone-offset">
+                  <img src="img/about.jpg" alt="about me">
+                </div> <!-- end of col div -->
+              </div>
+              
+
+              <div class="row">
+                <div class="col-lg-12 scrollImage">
+                  <button class="btn-primary bookNow">Book Now</button>
+                </div> <!-- end of col lg 12 div -->
+                </div> <!-- end row div -->
+
+               
+                <div class="row">
+                  <div class="col">
+                    <h1> test container</h1>
+                  </div>
+                </div>
+                </div> <!-- end of div container -->
+
+              <script>
+              export default {
+                data () {
+                  return {
+                    slide: 0,
+                    sliding: null
+                  }
+                },
+                methods: {
+                  onSlideStart (slide) {
+                    this.sliding = true
+                  },
+                  onSlideEnd (slide) {
+                    this.sliding = false
+                  }
+                }
+              }
+              </script>
+
+</div>
+    </div>
+
+
     
+ <script src="node_modules/jquery/dist/jquery.min.js"></script>
+ <script src="node_modules/vue/dist/vue.min.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ <script src="node_modules/bootstrap-vue/dist/bootstrap-vue.min.js"></script>
+ <script src="index.js"></script> 
+ <script src="routes.js"></script>
+ <script src="main.js"></script>
+ 
 </body>
-
-<script src="node_modules/vue/dist/vue.min.js"></script>
-<script> 
-
-var app = new Vue({
-    el: '#root',
-    data: {
-       newName: ' ',
-       names: ['Joe', 'Mary', 'Krista', 'Prudence', 'Teila']
-    },
-    
-    methods: {
-        onClick(){
-            this.names.push(this.newName);
-
-            this.newName = ' ';
-        }
-    }
-
-})
-
-
-
-    </script>
 </html>
