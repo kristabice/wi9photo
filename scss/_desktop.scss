@@ -1,0 +1,27 @@
+// ----------------STYLING APPLIED FOR TABLET--------------------//
+@media (min-width: 1024px) {
+    .carousel-item{
+        height: 600px;
+
+    }
+
+    .container{
+       max-width: 960px;
+     }
+
+
+    .scrollImage{
+        background-size: 960px;
+        height: 600px;
+    }
+    .bookNow{
+        bottom: 80px;
+        right: 180px;
+    }
+
+
+
+
+
+}
+// end of @media
