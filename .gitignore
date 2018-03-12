@@ -28,4 +28,8 @@ yarn-error.log*
 # alpha proxy
 STAR.*.alpha.bluehost.com.cabundle
 STAR.*.alpha.bluehost.com.crt
+<<<<<<< HEAD
 STAR.*.alpha.bluehost.com.key
+=======
+STAR.*.alpha.bluehost.com.key
+>>>>>>> 481d0041a421c5e4f0c1dcf4dcbc2de17b9882aa
