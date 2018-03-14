@@ -1,6 +1,10 @@
 // ------- css styling for phone ---------//
 body{
     background-image: url(../img/gplaypattern.png);
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Source Code Pro', monospace;
 }
 
 .container{
@@ -51,7 +55,7 @@ body{
   
   }
   .navbar{
-  
+      font-family: 'Source Code Pro', monospace;
       z-index: 99;
   }
   
@@ -99,6 +103,7 @@ body{
   }
 //style book now button
 .bookNow{
+    font-family: 'Source Code Pro', monospace;
     position: absolute;
     padding: 5px 92px;
     font-size: 16px;
@@ -118,7 +123,22 @@ body{
 .galleries{
     padding-bottom: 30em;
     padding-top: 1em;
-    img{
-        width: 100%;
+    div{
+        margin: 10px 0px;
+        img{
+            width: 100%;
+        }
+
+        h1{
+            padding: 20px;
+        }
+    }
+}
+
+figure{
+    border: 1px solid #eee;
+    padding: 10px;
+    figcaption{
+        text-align: center;
     }
 }

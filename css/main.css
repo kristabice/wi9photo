@@ -1,5 +1,9 @@
 body {
-  background-image: url(../img/gplaypattern.png); }
+  background-image: url(../img/gplaypattern.png);
+  font-family: 'Montserrat', sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Source Code Pro', monospace; }
 
 .container {
   background-color: rgba(255, 255, 255, 0.8);
@@ -40,6 +44,7 @@ body {
   background-color: white !important; }
 
 .navbar {
+  font-family: 'Source Code Pro', monospace;
   z-index: 99; }
 
 .navbar-nav .nav-item .nav-link {
@@ -76,6 +81,7 @@ span {
   z-index: 10; }
 
 .bookNow {
+  font-family: 'Source Code Pro', monospace;
   position: absolute;
   padding: 5px 92px;
   font-size: 16px;
@@ -93,8 +99,18 @@ span {
 .galleries {
   padding-bottom: 30em;
   padding-top: 1em; }
-  .galleries img {
-    width: 100%; }
+  .galleries div {
+    margin: 10px 0px; }
+    .galleries div img {
+      width: 100%; }
+    .galleries div h1 {
+      padding: 20px; }
+
+figure {
+  border: 1px solid #eee;
+  padding: 10px; }
+  figure figcaption {
+    text-align: center; }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .carousel-item {
