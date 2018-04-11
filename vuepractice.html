@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='root'>
+        <ul>
+            <li v-for='name in names' v-text="name"></li>
+
+        </ul>
+        <input type="text" id="input" v-model="newName">
+        <button @click="onClick" >Add Name</button>
+    </div> <!-- end of root div -->
+              
+    
+</body>
+
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script> 
+
+var app = new Vue({
+    el: '#root',
+    data: {
+       newName: ' ',
+       names: ['Joe', 'Mary', 'Krista', 'Prudence', 'Teila']
+    },
+    
+    methods: {
+        onClick(){
+            this.names.push(this.newName);
+
+            this.newName = ' ';
+        }
+    }
+
+})
+
+
+
+    </script>
+</html>

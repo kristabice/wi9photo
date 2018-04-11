@@ -2,16 +2,19 @@
 @media (min-width: 1024px) {
     .carousel-item{
         height: 600px;
+        img{
+            position: inherit;
+        }
 
     }
 
     .container{
-       max-width: 960px;
+       max-width: 1200px;
      }
 
 
     .scrollImage{
-        background-size: 960px;
+        background-size: 1200px;
         height: 600px;
     }
     .bookNow{
@@ -19,7 +22,9 @@
         right: 180px;
     }
 
-
+.phone-offset{
+    margin-left: 150px;
+}
 
 
 
