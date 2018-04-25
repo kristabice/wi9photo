@@ -79,9 +79,9 @@ Vue.component('navigation', {
         <b-collapse is-nav id="nav_collapse" class="flex-row-reverse">
 
             <b-navbar-nav>
-            <b-nav-item v-link={ path: '/' } class="items">Home</b-nav-item>
+            <b-nav-item class="items">Home</b-nav-item>
             <b-nav-item-dropdown text="About" right>
-            <b-dropdown-item v-link={ path: '/about' }>Arist Statement</b-dropdown-item>
+            <b-dropdown-item>Arist Statement</b-dropdown-item>
             <b-dropdown-item href="about.html">About Wi9</b-dropdown-item>
             </b-nav-item-dropdown>
             <b-nav-item href="#" class="items">Contact</b-nav-item>
